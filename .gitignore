@@ -1,0 +1,7 @@
+#extensions
+*.class
+*.DS_Store
+*.iml
+
+#dirs
+/railo
