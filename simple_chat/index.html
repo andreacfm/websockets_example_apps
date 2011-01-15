@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Railo Websockects Demo Apps - Simple Chat</title>
+    <script src="jquery-1.4.2.js" type="text/javascript"></script>
+    <script src="simple_chat.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>Simple-Chat Demo</h1>
+
+<table>
+    <tr>
+        <td>Server url</td>
+        <td><input type="text" id="server_url" value="localhost:8080"/></td>
+    </tr>
+    <tr>
+        <td>Nickname</td>
+        <td><input type="text" id="nickname"/></td>
+    </tr>
+    <tr>
+        <td>
+            <button id="connect">Connect</button>
+        </td>
+        <td>
+            <button id="disconnect" disabled="disabled">Disconnect</button>
+        </td>
+    </tr>
+</table>
+
+<h2>Railo Chat</h2>
+<table width="600">
+    <tr>
+        <td colspan="2">
+            <textarea id="chat_panel" rows="20" cols="40" style="width:100%" disabled="disabled"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td width="90%"><input type="text" id="message" value="" style="width:100%" disabled="disabled"></td>
+        <td>
+            <button>Send</button>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</html>
+
+
