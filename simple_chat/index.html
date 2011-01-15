@@ -12,7 +12,7 @@
 <table>
     <tr>
         <td>Server url</td>
-        <td><input type="text" id="server_url" value="localhost:8080"/></td>
+        <td><input type="text" id="server_url" value="ws://localhost:10125"/></td>
     </tr>
     <tr>
         <td>Nickname</td>
@@ -32,13 +32,13 @@
 <table width="600">
     <tr>
         <td colspan="2">
-            <textarea id="chat_panel" rows="20" cols="40" style="width:100%" disabled="disabled"></textarea>
+            <div id="chat_panel" style="width:100%;height:300px; border:1px solid black;"></div>
         </td>
     </tr>
     <tr>
-        <td width="90%"><input type="text" id="message" value="" style="width:100%" disabled="disabled"></td>
+        <td width="90%"><input type="text" id="message_box" value="" style="width:100%" disabled="disabled"></td>
         <td>
-            <button>Send</button>
+            <button id="send" disabled="disabled">Send</button>
         </td>
     </tr>
 </table>
