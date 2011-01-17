@@ -62,7 +62,7 @@ simple_chat.new_websocket = function(){
     simple_chat.ws.onopen = function(){
         var text = 'Joined the chat';
         simple_chat.log_message(simple_chat.format_message('You',text));
-        simple_chat.ws.send(simple_chat.format_message(simple_chat.nickname(),text));ß
+        simple_chat.ws.send(simple_chat.format_message(simple_chat.nickname(),text));
     }
 
     simple_chat.ws.onmessage = function(message){
