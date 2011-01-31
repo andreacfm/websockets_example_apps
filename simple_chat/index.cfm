@@ -13,7 +13,7 @@
 <table width="400" class="">
     <tr>
         <td>Server url</td>
-        <td><input type="text" id="server_url" value="ws://localhost:10125"/></td>
+        <td><input type="text" id="server_url" value="ws://localhost:10125?<cfoutput>#session.urltoken#</cfoutput>"/></td>
         <td><button id="connect">Connect</button></td>
     </tr>
     <tr>
