@@ -7,10 +7,28 @@
     $(document).ready(function(){
         ws = new WebSocket('ws://localhost:10126');
         ws.onmessage = function(ev){
-            console.log(ev.data);
+            var data = $.parseJSON(ev.data);
+            for(key in data){
+                var el = $('#' + key);
+                var old_val = parseInt(el.text());
+                $('#' + key).text(data[key]);
+                if(data[key] != old_val){
+                    el.css({backgroundColor:'yellow'});
+                }
+               setTimeout(function(){
+                        $('p').css({backgroundColor:'transparent'});
+                },500)
+            }
         }
     })
     </script>
+    <style type="text/css">
+    p{
+        text-align:center;
+        padding:3px;
+    }
+
+    </style>
 </head>
 <body>
 
@@ -18,36 +36,36 @@
 
 <h2>Stock Exchange</h2>
 
-<p><a href="data.cfm">Start pushing</a> || <a href="data.cfm">Stop pushing</a></p>
+<p><a href="data.cfm" target="_blank">Start pushing</a></p>
 
-<table>
+<table width="300">
     <thead>
         <tr>
             <td>Code</td>
             <td>Company Name</td>
-            <td>Value</td>
+            <td width="100">Value</td>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>GOOG</td>
             <td>Google</td>
-            <td><span id="GOOG"></span></td>
+            <td><p id="GOOG"></p></td>
         </tr>
         <tr>
             <td>APPL</td>
             <td>Apple</td>
-            <td><span id="APPL"></span></td>
+            <td><p id="APPL"></p></td>
         </tr>
         <tr>
             <td>MSFT</td>
             <td>Micorsoft</td>
-            <td><span id="MSFT"></span></td>
+            <td><p id="MSFT"></p></td>
         </tr>
         <tr>
             <td>AMZN</td>
             <td>Amazon</td>
-            <td><span id="AMZN"></span></td>
+            <td><p id="AMZN"></p></td>
         </tr>
     </tbody>
 </table>
