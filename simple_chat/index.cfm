@@ -35,7 +35,7 @@
         </p>
         <script src="https://gist.github.com/810140.js?file=websocket%20base"></script>
 
-        <h2>Gateway</h2>
+        <h2>More about the Gateway</h2>
         <p>Find more info about the gateway in the <a href="http://wiki.getrailo.org/wiki/Extensions:WebSockets_Gateway" target="_blank">Railo wiki pages</a></p>
         <p>Clone the source from <a href="https://github.com/andreacfm/WebSocket-Gateway-Extension" target="_blank">Github</a></p>
     </div>
