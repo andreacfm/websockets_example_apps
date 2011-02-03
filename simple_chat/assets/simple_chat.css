@@ -10,10 +10,14 @@ h1 {
 #chat_panel {
     width: 100%;
     height: 300px;
-    border: 1px solid #666666;
-    margin-top:50px;
+    margin-top:20px;
     padding:5px;
     overflow:auto;
+    font: normal 12px Verdana, sans-serif;
+    color:#333;
+    border: 1px solid #d7d7d7;
+    padding: 5px;
+    background: #FFFFFF url(../images/topfade.gif) repeat-x scroll center top;
 }
 
 #chat_panel p{
